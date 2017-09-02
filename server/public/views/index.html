@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>Projects</title>
+    <title>Nic Bade</title>
     <script src="vendors/angular.min.js" charset="utf-8"></script>
     <script src="vendors/angular-route.min.js" charset="utf-8"></script>
     <script src="scripts/client.js" charset="utf-8"></script>
     <script src="scripts/user.controller.js" charset="utf-8"></script>
+    <script src="scripts/repos.controller.js" charset="utf-8"></script>
     <script src="scripts/github.service.js" charset="utf-8"></script>
-  </head>
-  <body ng-app="myApp">
-    <h1>Hello World</h1>
-    <main ng-view>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
 
-    </main>
-  </body>
+<body ng-app="myApp">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- {{vm}} -->
+            <h1 class="navbar-brand">Nic Bade</h1>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#!user">Home</a></li>
+                <li><a href="#!repos">Portfolio</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class='col-md-12'>
+                <main>
+                    <ng-view></ng-view>
+                </main>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>

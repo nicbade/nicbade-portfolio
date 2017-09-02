@@ -1,3 +1,12 @@
-<div>
-  {{uc.user.data}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Github Username:
+                <a href="{{uc.user.data.html_url}}">{{uc.user.data.login}}</a>
+            </h3>
+        </div>
+        <div class="col-md-6">
+            <p><img src="{{uc.user.data.avatar_url}}" class="rounded float-right"></p>
+        </div>
+    </div>
 </div>

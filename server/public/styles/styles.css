@@ -1,0 +1,11 @@
+body {
+    padding-top: 100px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+img {
+    max-height: 200px;
+    max-width: 250px;
+    width: 150px;
+    height: 150px;
+}
