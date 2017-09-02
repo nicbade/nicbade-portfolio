@@ -16,23 +16,3 @@ myApp.config(['$routeProvider', function($routeProvider) {
             redirectTo: '/user'
         });
 }]);
-
-// realEstateApp.config(['$routeProvider', function($routeProvider) {
-//     $routeProvider
-//         .when('/forSale', {
-//             templateUrl: '/views/forsale.html',
-//             controller: 'SaleController as vm'
-//         })
-//         .when('/forRent', {
-//             templateUrl: '/views/forrent.html',
-//             controller: 'RentController as vm'
-//         })
-//         .when('/addListing', {
-//             templateUrl: '/views/addlisting.html',
-//             controller: 'AddListingController as vm'
-//         })
-//         .otherwise({
-//             // catch-all
-//             redirectTo: '/forSale'
-//         });
-// }]);
