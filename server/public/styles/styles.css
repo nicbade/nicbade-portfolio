@@ -4,6 +4,11 @@ body {
     /* color: #fff; */
 }
 
+.navbar {
+    background-color: #3a3f46;
+    color: white;
+}
+
 .vcenter {
     /* display: inline-block; */
     vertical-align: middle;
@@ -11,7 +16,7 @@ body {
 }
 
 .repo {
-    padding: 10px;
+    padding: 5px;
     margin-left: 10px;
     margin-bottom: 30px;
     /* background-color: rgba(16, 41, 83, 0.60) */
@@ -27,4 +32,6 @@ img {
 
 footer {
     margin-top: 100px;
+    background-color: #3a3f46;
+    color: white;
 }
