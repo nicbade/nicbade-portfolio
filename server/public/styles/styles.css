@@ -1,6 +1,20 @@
 body {
     padding-top: 100px;
     font-family: 'Libre Franklin', sans-serif;
+    /* color: #fff; */
+}
+
+.vcenter {
+    /* display: inline-block; */
+    vertical-align: middle;
+    float: right;
+}
+
+.repo {
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    /* background-color: rgba(16, 41, 83, 0.60) */
 }
 
 img {
@@ -8,5 +22,9 @@ img {
     max-width: 350px;
     width: 150px;
     height: 150px;
-    float: right;
+    float: left;
+}
+
+footer {
+    margin-top: 100px;
 }

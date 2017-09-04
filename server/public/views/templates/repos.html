@@ -1,8 +1,23 @@
-<div class="container col-md-6">
-    <div class="row">
-        <div>
-            <h3>Github Repositions: {{rc.repos.data[26].name}}
-            </h3>
+<div class="container col-md-12">
+    <div class="repo">
+        <h3 class="col-md-12">Github Repositions: </h3>
+        <div class="row well">
+            <h4 class="col-md-4"><a href="{{rc.repos.data[26].html_url}}">{{rc.repos.data[26].name}}</a></h4>
+            <p class="col-md-6">{{rc.repos.data[26].description}}</p>
+        </div>
+    </div>
+
+    <div class="repo">
+        <div class="row well">
+            <h4 class="col-md-4"><a href="{{rc.repos.data[29].html_url}}">{{rc.repos.data[29].name}}</a></h4>
+            <p class="col-md-6">{{rc.repos.data[29].description}}</p>
+        </div>
+    </div>
+
+    <div class="repo">
+        <div class="row well">
+            <h4 class="col-md-4"><a href="{{rc.repos.data[27].html_url}}">{{rc.repos.data[27].name}}</a></h4>
+            <p class="col-md-6">{{rc.repos.data[27].description}}</p>
         </div>
     </div>
 </div>
