@@ -1,23 +1,16 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <p><img src="{{uc.user.data.avatar_url}}" alt="profile picture" class="rounded float-right img-circle"></p>
-        </div>
-        <div class="col-md-6 vcenter">
-            <h3>Github Username:
-                <a href="{{uc.user.data.html_url}}">{{uc.user.data.login}}</a>
-            </h3>
-        </div>
+<div class="columns">
+    <div class="column is-auto is-mobile is-desktop">
+        <p><img src="{{uc.user.data.avatar_url}}" alt="profile picture" class="image-is-square"></p>
     </div>
-    <div class="row">
-        <div class="col-md-1">
-            <p>Info:</p>
-        </div>
-        <div id="intro" class="col-md-12 col-sm-12">
-            <p>I'm Nic Bade, a full-stack software engineer from St. Paul, Minnesota. I enjoy the Javascript stack and am open to learning new languages as I have the opportunity. Being a Minnesota native I also enjoy hockey, being outdoors and loving lavishly
-                on my family and dog (Chloe).</p>
-        </div>
-
+    <div class="column is-three-quarters is-mobile is-desktop">
+        <article class="message is-info">
+            <div class="message-body">
+                <div id="intro">
+                    <p>I'm Nic Bade, a full-stack software engineer from St. Paul, Minnesota. I enjoy the Javascript stack and am open to learning new languages as I have the opportunity. Being a Minnesota native I also enjoy hockey, being outdoors and loving
+                        lavishly on my family and dog (Chloe).</p>
+                </div>
+            </div>
+        </article>
     </div>
-
+    <div class="column is-one"></div>
 </div>

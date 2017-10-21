@@ -4,77 +4,36 @@
 <head>
     <meta charset="utf-8">
     <title>Nic Bade</title>
+
+    <!-- ANGULAR MATERIAL -->
     <script src="vendors/angular.min.js" charset="utf-8"></script>
     <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+
     <script src="scripts/client.js" charset="utf-8"></script>
+
+    <!-- CONTROLLERS -->
     <script src="scripts/user.controller.js" charset="utf-8"></script>
     <script src="scripts/repos.controller.js" charset="utf-8"></script>
+
+    <!-- SERVICES -->
     <script src="scripts/github.service.js" charset="utf-8"></script>
+
+    <!-- CSS / STYLING -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendors/bulma.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="vendors/bootstrap.min.css"> -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="site-wrapper" ng-app="myApp">
-    <div class="container">
-        <section class="hero is-info">
-            <div class="hero head">
-                <nav class="level">
-                    <p class="level-item has-text-centered">
-                        <a href="#!user" class="link is-info">
-                        Home
-                    </a>
-                    </p>
-                    <p class="title level-item has-text-centered" style="height: 30px;">
-                        Nic Bade
-                    </p>
+    <header ng-include="'/views/partials/header.html'"></header>
 
-                    <p class="level-item has-text-centered">
-                        <a href="#!repos" class="link is-info">
-                        Portfolio
-                    </a>
-                    </p>
-                </nav>
-            </div>
-        </section>
+    <main>
+        <ng-view></ng-view>
+    </main>
 
-        <nav class="navbar is-transparent">
-            <div class="navbar-brand">
-                <h1 class="title is-4" style="color: #ffffff">Nic Bade</h1>
-                <a href="https://github.com/nicbade" class="navbar-item is-hidden-desktop">
-                    <span class="icon" style="color: #ffffff">
-                        <i class="fa fa-github"></i>
-                    </span>
-                </a>
+    <footer ng-include="'/views/partials/footer.html'"></footer>
 
-                <a href="https://www.linkedin.com/in/nicbade/" class="navbar-item is-hidden-desktop">
-                    <span class="icon" style="color: #ffffff">
-                        <i class="fa fa-linkedin"></i>
-                    </span>
-                </a>
-                <a href="mailto:nicbade@me.com" class="navbar-item">
-                    <span class="icon" style="color: #ffffff">
-                        <i class="fa fa-envelope"></i>
-                    </span>
-                </a>
-                <a href="tel:16124706775" class="navbar-item">
-                    <span class="icon" style="color: #ffffff">
-                        <i class="fa fa-mobile"></i>
-                    </span>
-                </a>
-
-            </div>
-            <div id="navMenuTransparent" class="navbar-menu">
-                <div class="navbar-start">
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a href="" class="navbar-link is-active"></a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
 </body>
 
 <!-- <body class="site-wrapper" ng-app="myApp">

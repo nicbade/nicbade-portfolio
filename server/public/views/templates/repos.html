@@ -1,23 +1,21 @@
-<div class="container col-md-12">
-    <h3 class="col-md-12">Github Repositories: </h3>
-    <div class="repo">
-        <div class="row well">
-            <h4 class="col-md-3"><a href="{{rc.repos.data[26].html_url}}">{{rc.repos.data[26].name}}</a></h4>
-            <p class="col-md-4">{{rc.repos.data[26].description}}</p>
-        </div>
-    </div>
+<div>
+    <h3 class="title is-4">Github Repositories: </h3>
 
-    <div class="repo">
-        <div class="row well">
-            <h4 class="col-md-3"><a href="{{rc.repos.data[29].html_url}}">{{rc.repos.data[29].name}}</a></h4>
-            <p class="col-md-4">{{rc.repos.data[29].description}}</p>
-        </div>
-    </div>
+    <div class="media-left">
+        <div ng-repeat="repo in rc.repos.data">
+            <article class="message is-info">
+                <div class="message-body">
+                    <a href="{{repo.data.html_url}}">
 
-    <div class="repo">
-        <div class="row well">
-            <h4 class="col-md-3"><a href="{{rc.repos.data[27].html_url}}">{{rc.repos.data[27].name}}</a></h4>
-            <p class="col-md-4">{{rc.repos.data[27].description}}</p>
+                        <h1 class="title is-6">{{repo.name}}</h1>
+                        <p>{{repo.description}}</p>
+                    </a>
+                </div>
+            </article>
         </div>
+
     </div>
+</div>
+
+
 </div>

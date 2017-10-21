@@ -13,6 +13,6 @@ myApp.config(['$routeProvider', function($routeProvider) {
             controller: 'ReposController as rc'
         }).otherwise({
             // catch-all
-            redirectTo: '/user'
+            redirectTo: '/index.html'
         });
 }]);

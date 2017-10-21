@@ -1,13 +1,10 @@
 body {
-    padding-top: 100px;
     font-family: 'Libre Franklin', sans-serif;
     /* color: #fff; */
 }
 
-.navbar {
-    background-color: #3a3f46;
-    color: white;
-    margin-bottom: 5 px;
+header {
+    height: 50px;
 }
 
 .vcenter {
@@ -29,14 +26,25 @@ img {
     width: 150px;
     height: 150px;
     float: left;
+    margin: 5%;
 }
 
 #intro {
     margin: 10px;
 }
 
+.icon {
+    font-size: 24px;
+}
+
+header {
+    margin-bottom: 10%;
+}
+
 footer {
-    margin-top: 100px;
-    background-color: #3a3f46;
-    color: white;
+    font-size: 10px;
+}
+
+#footerName {
+    color: hsl(217, 71%, 53%)
 }

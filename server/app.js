@@ -55,6 +55,7 @@ app.get('/github/repos', function(req, res) {
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'public/views/index.html'));
+    console.log('req.body', req.body);
 });
 
 app.listen(port, function() {

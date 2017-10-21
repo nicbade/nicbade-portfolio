@@ -22,8 +22,9 @@ myApp.service('GithubService', function($http) {
             method: 'GET',
             url: '/github/repos/'
         }).then(function(response) {
-            console.log(response.data);
+            // console.log(response.data);
             repos.data = response.data;
+            console.log('repos.data: ', repos.data)
         });
     }
 
