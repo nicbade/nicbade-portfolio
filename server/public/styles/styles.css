@@ -48,3 +48,12 @@ footer {
 #footerName {
     color: hsl(217, 71%, 53%)
 }
+
+.message {
+    margin: 10px;
+}
+
+.hero {
+    padding: 10px;
+    margin: 10px;
+}

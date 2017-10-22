@@ -1,15 +1,46 @@
 <div>
-    <h3 class="title is-4">Github Repositories: </h3>
-
+    <div media-left>
+        <div class="columns">
+            <h3 class="title is-4 column">Github Repositories: </h3>
+        </div>
+    </div>
     <div class="media-left">
-        <div ng-repeat="repo in rc.repos.data">
+        <div class="column">
             <article class="message is-info">
                 <div class="message-body">
-                    <a href="{{repo.data.html_url}}">
+                    <a href="{{rc.repos.data[6].html_url}}">
 
-                        <h1 class="title is-6">{{repo.name}}</h1>
-                        <p>{{repo.description}}</p>
+                        <h1 class="title is-6">{{rc.repos.data[6].name}}</h1>
                     </a>
+                    <p>{{rc.repos.data[6].description}}</p>
+
+                </div>
+            </article>
+        </div>
+
+        <div class="column">
+            <article class="message is-info">
+                <div class="message-body">
+                    <a href="https://github.com/oasisforyouth/volunteer-management">
+
+                        <h1 class="title is-6">volunteer-management</h1>
+                    </a>
+                    <p>Full stack application using PostgreSQL, Expressjs, Nodejs, AngularJS, Angular-materal, Nodemailer Edit Add topics
+                    </p>
+
+                </div>
+            </article>
+        </div>
+
+        <div class="column">
+            <article class="message is-info">
+                <div class="message-body">
+                    <a href="{{rc.repos.data[29].html_url}}">
+
+                        <h1 class="title is-6">{{rc.repos.data[29].name}}</h1>
+                    </a>
+                    <p>{{rc.repos.data[29].description}}</p>
+
                 </div>
             </article>
         </div>
